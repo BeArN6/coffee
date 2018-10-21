@@ -29,6 +29,14 @@ $(window).load(function(){
 		]
 	});
 
+	$(".comments__slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+  		autoplaySpeed: 2000,
+  		arrows: false
+	});
+
 	$(window).scroll(function() {
     	if ($(this).scrollTop() > 50) {
 			$(".header").addClass("active");
